@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fin.Usuario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="id_user"></Label>
+            <Label x:Name="nombre"></Label>
+            <Label x:Name="apellido"></Label>
+            <Label x:Name="correo"></Label>
+            <Label x:Name="tipo_usu"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

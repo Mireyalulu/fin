@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="fin.Asignar_tareas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ASIGNAR TAREAS" FontSize="Large" HorizontalOptions="Center"/>
+            <Label Text="Usuario:" ></Label>
+            <Entry x:Name="Usuario"></Entry>
+            <Picker x:Name="pkrTarea" Title="Tareas" SelectedIndexChanged="pkrTarea_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Agrgar Informacion de los Productos</x:String>
+                        <x:String>Asignar Costo del Producto</x:String>
+                        <x:String>Verificar la Informacion del Producto</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Picker x:Name="pkrPrioridad" Title="Prioridad" SelectedIndexChanged="pkrPrioridad_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Alta</x:String>
+                        <x:String>Media</x:String>
+                        <x:String>Baja</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Label Text="Fecha de Termino"/>
+            <DatePicker  x:Name="datePicker" Format="dd/MM/yyyy" DateSelected="datePicker_DateSelected"/>
+            <Picker x:Name="pkrDependencia" SelectedIndexChanged="pkrDependencia_SelectedIndexChanged" Title="Dependencia"></Picker>
+            <Button x:Name="Registrar" Text="Registrar" Clicked="Registrar_Clicked" BackgroundColor="Plum"/>
+            <Image Source="asi.jpg" HorizontalOptions="Center" VerticalOptions="Center" Aspect="AspectFill" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
